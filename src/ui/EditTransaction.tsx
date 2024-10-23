@@ -172,6 +172,8 @@ const ExpenseLine: React.FC<{
   const assetsAndLiabilities = union(
     props.txCache.assetAccounts,
     props.txCache.liabilityAccounts,
+    props.txCache.expenseAccounts,
+    props.txCache.incomeAccounts
   );
 
   const getSuggestions = (): string[] => {
